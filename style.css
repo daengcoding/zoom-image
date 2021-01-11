@@ -1,0 +1,66 @@
+html{
+	background-color: aliceblue;
+}
+body{
+	margin:0 auto;
+}
+h1{
+	margin-top:150px;
+	margin-left:500px;
+	font-family:"Glass Antique", cursive;
+}
+.piclist{
+	margin-top: 30px;
+	margin-left:420px;
+}
+.piclist li{
+	display:inline-block;
+	width:50px;
+	height: 50px;
+}
+.piclist li img{
+	width:100%;
+	height: auto;
+}
+.picZoomer{
+	position: relative;
+	margin-left:400px;
+}
+.picZoomer-pic-wp,
+.picZoomer-zoom-wp{
+	border:1px solid #333;
+}
+.picZoomer-pic-wp{
+	position: relative;
+	overflow: hidden;
+}
+.picZoomer-pic-wp:hover .picZoomer-cursor{
+	display: block;
+}
+.picZoomer-zoom-pic{
+	position: absolute;
+	top:0;
+	left:0;
+}
+.picZoomer-pic{
+	width:100%;
+	height: 100%;
+}
+.picZoomer-zoom-wp{
+	display:none;
+	position:absolute;
+	z-index:999;
+	overflow: hidden;
+}
+.picZoomer-cursor{
+	display:none;
+	cursor:crosshair;
+	width:100px;
+	height: 100px;
+	position: absolute;
+	top:0;
+	left:0;
+	border-radius:50%;
+	border:1px solid #eee;
+	background-color:rgba(0,0,0,.1);
+}
